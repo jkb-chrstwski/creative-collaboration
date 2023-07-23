@@ -1,0 +1,21 @@
+@import "variables";
+
+.app--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+
+    .router-outlet--wrapper {
+        width: 100%;
+        flex-grow: 1;
+    }
+}
+
+.navigation--wrapper {
+    height: $navigation-height;
+    width: 100vw;
+    background-color: $navy-800;
+    box-shadow: 0px 0px 3px 3px $dark-200;
+    z-index: 1;
+}
