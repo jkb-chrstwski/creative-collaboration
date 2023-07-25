@@ -27,7 +27,9 @@ export const DefaultDashboardConfig = [
         y: 2,
         x: 4,
         config: {
-
+            type: DashboardItemType.WEB_VIEW,
+            backgroundColor: '#fbfcfc',
+            src: 'https://flocus.io/aesthetic-quotes/'
         },
     }
 ];

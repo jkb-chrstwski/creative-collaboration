@@ -4,8 +4,6 @@ import { DashboardItem,  } from "../../models";
 import { DefaultDashboardConfig } from "../../config";
 
 
-
-
 @Injectable()
 export class BoardService {
 
@@ -14,7 +12,6 @@ export class BoardService {
   constructor() {
     this.loadItems();
   }
-
 
   private loadItems(): void {
     this.boardItems$.next(DefaultDashboardConfig);
