@@ -1,0 +1,33 @@
+@import "variables";
+
+.board-item--container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.board-item--navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    &.half-visible {
+        opacity: 0.3;
+        .navigation-action--items {
+            pointer-events: none;
+        }
+    }
+}
+
+.navigation-action--items {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: $dark-200;    
+}

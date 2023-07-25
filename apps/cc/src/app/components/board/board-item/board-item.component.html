@@ -1,0 +1,11 @@
+<div class="board-item--container">
+  <div class="board-item--navigation" [class.hidden]="!showNavigation" [class.half-visible]="halfVisibleNavigation && !showNavigation"
+    (mouseenter)="startTimeout()" (mouseleave)="hideNavigation()">
+    <div class="navigation-action--items">      
+        <img (dblclick)="removeItem()" [style.height.px]="15" src="assets/icons/close.svg" />      
+    </div>
+  </div>
+  <ng-container *ngIf="config.type === DashboardItemType.WEB_VIEW">
+    <org-web-view [src]="config.src"></org-web-view>
+  </ng-container>
+</div>

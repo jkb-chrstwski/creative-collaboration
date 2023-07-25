@@ -1,8 +1,8 @@
 <div class="grid--wrapper">
     <div class="grid--container">
         <gridster [options]="options">
-            <gridster-item [item]="item" *ngFor="let item of boardItems$ | async" [style.backgroundColor]="item.config.backgroundColor" >
-                <org-web-view *ngIf="item.config.type === DashBoardItemType.WEB_VIEW" [src]="item.config.src"></org-web-view>
+            <gridster-item [item]="item" *ngFor="let item of boardItems$ | async" [style.backgroundColor]="item.backgroundColor" >
+                <org-board-item [item]="item"></org-board-item>
             </gridster-item>
         </gridster>
     </div>
